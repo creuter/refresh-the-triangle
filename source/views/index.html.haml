@@ -1,11 +1,79 @@
 ---
-title: Page Title
----
+title: Refresh the Triangle
 
-.delete-me
-  .container
-    %h1 Proteus
+---
+.pane.hero-pane
+  .pane-inner
+    .card
+      = image_tag "hq.png"
+      .card-details
+        .card-date
+          %p October
+          %p 08
+        .card-location
+          %h2 HQ Raleigh
+          %address
+            310 S. Harrington St.
+            %br
+            Raleigh, NC  27601
+      = link_to "RSVP", "#", class: "card-link"
+.pane.content-pane
+  .pane-inner
+    = sprockets.find_asset('refresh-arrows.svg').to_s
+
+    %hr
+
+    %h2 A community of web professionals
+
     %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-      building your prototype.
+      Refresh the Triangle is a meetup organized around bringing together
+      developers, designers, content creators, project managers, and anyone else
+      who works inside the digital space to discuss and share big ideas about
+      how to improve at our craft, delight our stakeholders, and create quality
+      experiences online.
+
+    %p
+      Our goal is simple: bring together the best and brightest new media
+      professionals in the Triangle so that we may learn from and inspire one
+      another.
+
+    %h3 Next Meetup
+
+    %h2 Lightning Talks: Themes on Creativity
+
+    .topic-summary
+      %p
+        We're kicking off a new era in RTT's history with a session of 5—minute
+        lightning talks based on varying facets of Creativity.
+
+      %p Presentations will include:
+
+      %ul
+        %li Encouraging Divergent Thinking
+        %li Fostering Creativity in an Uninspiring Environment
+        %li Building a space for Creative Work
+        %li &hellip; and more!
+
+    %p
+      Refresh the triangle is organized by
+      = succeed ',' do
+        = link_to "@tevanalexander", "#"
+      = succeed ',' do
+        = link_to "@joshmobley", "#"
+      and
+      = succeed '.' do
+        = link_to "@jchreu", "#"
+
+    %hr
+
+    %h2 Sponsors
+    %ul.sponsors
+      %li
+        = link_to "#" do
+          = image_tag "thoughtbot-logo.png"
+      %li
+        = link_to "#" do
+          = image_tag "hq-logo.png"
+      %li
+        = link_to "#" do
+          = image_tag "bronto-logo.png"

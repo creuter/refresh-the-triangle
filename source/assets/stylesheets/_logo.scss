@@ -1,0 +1,13 @@
+.logo {
+  @include margin(null auto);
+  @include position(absolute, $base-spacing 0 null);
+  display: block;
+  height: $large-spacing;
+  max-width: 14em;
+
+  @include media($large-screen) {
+    @include margin(0 0 $base-spacing);
+    height: inherit;
+    position: static;
+  }
+}

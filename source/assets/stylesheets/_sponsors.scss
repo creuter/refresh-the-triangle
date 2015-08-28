@@ -1,0 +1,26 @@
+.sponsors {
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(space-between);
+
+  li {
+    width: 30%;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    @include filter(brightness(0));
+    @include margin(null auto);
+    @include transition;
+    opacity: 0.45;
+
+    &:hover,
+    &:focus {
+      @include filter(none);
+      opacity: 1;
+    }
+  }
+}

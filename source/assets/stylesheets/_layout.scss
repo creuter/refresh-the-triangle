@@ -1,0 +1,56 @@
+body {
+  padding-top: $large-spacing * 2;
+
+  @include media($large-screen) {
+    padding-top: 0;
+  }
+}
+
+.pane {
+  @include media($large-screen) {
+    min-height: 100%;
+    width: 50%;
+  }
+}
+
+.content-pane {
+  @include media($large-screen) {
+    @include position(absolute, 0 null null 0);
+    margin-bottom: 0;
+  }
+}
+
+.hero-pane {
+  background-image: image-url("raleigh.jpg");
+  background-position: 50%;
+  background-size: cover;
+  box-shadow: inset 0 1px 3px rgba(#000, 0.1);
+
+  &::before {
+    @include position(absolute, 0);
+    content: "";
+  }
+
+  @include media($large-screen) {
+    @include position(fixed, 0 0 null null);
+    box-shadow: none;
+    overflow-y: auto;
+  }
+}
+
+.pane-inner {
+  @include margin(null auto);
+  max-width: 28em;
+  padding: 2em;
+
+  @include media($large-screen) {
+    padding: 3.25em;
+    max-width: 30.5em;
+  }
+
+  .hero-pane & {
+    @include media($large-screen) {
+      height: 100vh;
+    }
+  }
+}

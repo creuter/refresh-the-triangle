@@ -1,0 +1,11 @@
+.topic-summary {
+  margin-bottom: $large-spacing;
+
+  ul {
+    @extend %default-ul;
+  }
+
+  ol {
+    @extend %default-ol;
+  }
+}

@@ -1,0 +1,79 @@
+.card {
+  @include margin(null auto);
+  background-color: $white;
+  box-shadow: 0 2px 14px rgba($dark-gray, 0.3);
+  max-width: 19em;
+  position: relative;
+
+  @include media($large-screen) {
+    @include transform(translateY(-50%));
+    top: 50%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.card-details {
+  border-bottom: $base-border;
+  display: table;
+  width: 100%;
+}
+
+.card-date {
+  box-shadow: inset -1px 0 $base-border-color;
+  display: table-cell;
+  line-height: 1;
+  padding: $base-spacing;
+  text-align: center;
+  vertical-align: middle;
+
+  p:first-child {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  p:last-child {
+    color: $base-font-color;
+    font-family: $heading-font-family;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: -0.1em;
+    margin-bottom: 0;
+  }
+}
+
+.card-location {
+  display: table-cell;
+  padding: $base-spacing;
+  vertical-align: middle;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  address {
+    color: $light-font-color;
+    font-size: 0.825em;
+    font-style: normal;
+  }
+}
+
+.card-link {
+  @include transition(padding, 0.15s $ease-out-back);
+  color: $base-font-color;
+  display: block;
+  font-family: $heading-font-family;
+  font-weight: 900;
+  padding: $small-spacing;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    @include padding($base-spacing null);
+    color: $base-font-color;
+  }
+}
