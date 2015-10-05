@@ -1,5 +1,5 @@
 body {
-  padding-top: $large-spacing * 2;
+  padding-top: $large-spacing * 5;
 
   @include media($large-screen) {
     padding-top: 0;
@@ -21,6 +21,7 @@ body {
 }
 
 .hero-pane {
+  @include padding($large-spacing null);
   background-image: image-url("raleigh.jpg");
   background-position: 50%;
   background-size: cover;
@@ -32,6 +33,7 @@ body {
   }
 
   @include media($large-screen) {
+    @include padding(0 null);
     @include position(fixed, 0 0 null null);
     box-shadow: none;
     overflow-y: auto;
