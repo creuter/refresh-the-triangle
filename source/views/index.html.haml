@@ -7,16 +7,19 @@ title: Refresh the Triangle
     .card
       = image_tag "hq.png"
       .card-details
-        .card-date
-          %p October
-          %p 08
+        %time.card-date
+          %span.month October
+          %br
+          %span.day 08
+          %br
+          at 6:30
         .card-location
           %h2 HQ Raleigh
           %address
             310 S. Harrington St.
             %br
             Raleigh, NC  27601
-      = link_to "RSVP", "#", class: "card-link"
+      = link_to "RSVP", "http://meetup.com/refreshthetriangle/", class: "card-link"
 .pane.content-pane
   .pane-inner
     = sprockets.find_asset('refresh-logo.svg').to_s
@@ -57,23 +60,21 @@ title: Refresh the Triangle
     %p
       Refresh the triangle is organized by
       = succeed ',' do
-        = link_to "@tevanalexander", "#"
+        = link_to "@tevan", "http://twitter.com/tevan"
       = succeed ',' do
-        = link_to "@joshmobley", "#"
+        = link_to "@joshmobley", "http://twitter.com/joshmobley"
       and
       = succeed '.' do
-        = link_to "@jchreu", "#"
+        = link_to "@jchreu", "http://twitter.com/jchreu"
 
     %hr
 
     %h2 Sponsors
     %ul.sponsors
       %li
-        = link_to "#" do
+        = link_to "http://thoughtbot.com" do
           = image_tag "thoughtbot-logo.png"
       %li
-        = link_to "#" do
+        = link_to "http://hqraleigh.com" do
           = image_tag "hq-logo.png"
       %li
-        = link_to "#" do
-          = image_tag "bronto-logo.png"

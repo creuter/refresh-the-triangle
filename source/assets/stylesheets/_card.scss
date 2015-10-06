@@ -25,23 +25,23 @@
 .card-date {
   box-shadow: inset -1px 0 $base-border-color;
   display: table-cell;
+  font-size: 0.75em;
   line-height: 1;
   padding: $base-spacing;
   text-align: center;
   vertical-align: middle;
 
-  p:first-child {
-    font-style: italic;
+  p {
+    font-size: 0.825em;
     margin-bottom: 0;
   }
 
-  p:last-child {
+  .day {
     color: $base-font-color;
     font-family: $heading-font-family;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900;
-    letter-spacing: -0.1em;
-    margin-bottom: 0;
+    margin-bottom: 0.025em;
   }
 }
 
