@@ -5,21 +5,23 @@ title: Refresh the Triangle
 .pane.hero-pane
   .pane-inner
     .card
-      = image_tag "hq.png"
+      = image_tag "caktus.png"
       .card-details
         %time.card-date
-          %span.month October
+          %span.month January
           %br
-          %span.day 08
+          %span.day 28
           %br
           at 6:30
         .card-location
-          %h2 HQ Raleigh
+          %h2 Caktus Group
           %address
-            310 S. Harrington St.
+            %i Next to Pizzeria Toro
+            %br 
+            108 Morris St. Suite 1C
             %br
-            Raleigh, NC  27601
-      = link_to "RSVP", "http://meetup.com/refreshthetriangle/", class: "card-link"
+            Durham, NC  27701
+      = link_to "RSVP", "http://www.meetup.com/refreshthetriangle/events/226568051/", class: "card-link"
 .pane.content-pane
   .pane-inner
     = sprockets.find_asset('refresh-logo.svg').to_s
@@ -42,20 +44,30 @@ title: Refresh the Triangle
 
     %h3 Next Meetup
 
-    %h2 Lightning Talks: Themes on Creativity
+    %h2
+      Gather Great Minds, Share our Knowledge, Grow and Learn, Promote Local
+      Talent
 
     .topic-summary
       %p
-        We're kicking off a new era in RTT's history with a session of 5—minute
-        lightning talks based on varying facets of Creativity.
+        Fifteen years into his career, Peyton shares some of his favorite laws,
+        lessons, and tips that help him create, think, collaborate, communicate,
+        and execute more effectively.
 
-      %p Presentations will include:
+      %p
+        From high-level cognitive and design principles to practical daily tips
+        and tools, this will be a cross-disciplinary mix that spurs on some
+        great dialogue and sharing.
 
-      %ul
-        %li Encouraging Divergent Thinking
-        %li Fostering Creativity in an Uninspiring Environment
-        %li Building a space for Creative Work
-        %li &hellip; and more!
+      %p
+        Peyton was long-time Designer and Design Director at the digital agency
+        Viget, where he collaborated with various teams and clients on projects,
+        brands, and initiatives big and small. He co-founded Refresh the
+        Triangle and Viget’s Durham office in 2007. He’s now exploring the world
+        of in-house product design, brand, and marketing as Director of Web
+        Design at
+        = succeed '.' do
+          = link_to "Spoonflower", "http://spoonflower.com"
 
     %p
       Refresh the triangle is organized by
@@ -75,6 +87,6 @@ title: Refresh the Triangle
         = link_to "http://thoughtbot.com" do
           = image_tag "thoughtbot-logo.png"
       %li
-        = link_to "http://hqraleigh.com" do
-          = image_tag "hq-logo.png"
+        = link_to "https://www.caktusgroup.com" do
+          = image_tag "caktus-logo.png"
       %li
