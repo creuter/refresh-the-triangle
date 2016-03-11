@@ -5,22 +5,23 @@ title: Refresh the Triangle
 .pane.hero-pane
   .pane-inner
     .card
-      = image_tag "caktus.png"
+      = image_tag "industrious.png"
       .card-details
         %time.card-date
-          %span.month January
+          %span.month April
           %br
-          %span.day 28
+          %span.day 14
           %br
           at 6:30
         .card-location
-          %h2 Caktus Group
+          %h2 Charter Square
           %address
-            %i Next to Pizzeria Toro
-            %br 
-            108 Morris St. Suite 1C
+            555 Fayetteville St.
             %br
-            Durham, NC  27701
+            3rd Floor
+            %br
+            Raleigh, NC  27601
+      -# TODO: update meetup link
       = link_to "RSVP", "http://www.meetup.com/refreshthetriangle/events/226568051/", class: "card-link"
 .pane.content-pane
   .pane-inner
@@ -44,30 +45,31 @@ title: Refresh the Triangle
 
     %h3 Next Meetup
 
-    %h2
-      Gather Great Minds, Share our Knowledge, Grow and Learn, Promote Local
-      Talent
+    %h2 The Discipline of Quality
 
     .topic-summary
-      %p
-        Fifteen years into his career, Peyton shares some of his favorite laws,
-        lessons, and tips that help him create, think, collaborate, communicate,
-        and execute more effectively.
 
       %p
-        From high-level cognitive and design principles to practical daily tips
-        and tools, this will be a cross-disciplinary mix that spurs on some
-        great dialogue and sharing.
+        Chad Pytel, co-founder and CEO of
+        <a href="http://thoughtbot.com">thoughtbot</a>,
+        discusses its origins, how early experiences influenced the direction
+        and culture of the company, and how he has learned to cultivate a
+        consistently high standard of quality in work.
 
       %p
-        Peyton was long-time Designer and Design Director at the digital agency
-        Viget, where he collaborated with various teams and clients on projects,
-        brands, and initiatives big and small. He co-founded Refresh the
-        Triangle and Viget’s Durham office in 2007. He’s now exploring the world
-        of in-house product design, brand, and marketing as Director of Web
-        Design at
-        = succeed '.' do
-          = link_to "Spoonflower", "http://spoonflower.com"
+        Chad leads the day-to-day operations of thoughtbot, including human
+        resources, hiring, and growth, and is responsible for overall strategy
+        for the company.
+
+      %p
+        He has twenty years of experience in software development and services,
+        and has co-authored two books:
+        <a href="http://www.amazon.com/Rails-AntiPatterns-Refactoring-Addison-Wesley-Professional/dp/0321604814">Rails AntiPatterns</a>
+        and
+        <a href="http://www.amazon.com/Pro-ActiveRecord-Ruby-Databases-Rails/dp/1590598474">Pro ActiveRecord for Ruby</a>.
+        Chad holds bachelor of science degrees in both Computer Science and
+        Humanities &amp; Arts (Drama/Theatre) from Worcester Polytechnic
+        Institute (WPI).
 
     %p
       Refresh the triangle is organized by
@@ -84,9 +86,9 @@ title: Refresh the Triangle
     %h2 Sponsors
     %ul.sponsors
       %li
-        = link_to "http://thoughtbot.com" do
-          = image_tag "thoughtbot-logo.png"
+        = link_to "https://dzone.com/" do
+          = image_tag "dzone-logo.png"
       %li
-        = link_to "https://www.caktusgroup.com" do
-          = image_tag "caktus-logo.png"
+        = link_to "http:/industriousoffice.com/" do
+          = image_tag "industrious-logo.png"
       %li
