@@ -2,6 +2,8 @@
 
 A middleman site for North Carolina's Refresh The Triangle meetup.
 
+http://refreshthetriangle.co
+
 ## Getting Started
 
 Set up your project in your code directory
@@ -16,7 +18,7 @@ Run the server
 middleman
 ```
 
-Deploy to Github Pages (not yet configured)
+Deploy changes to GitHub Pages
 ```
 middleman deploy
 ```
