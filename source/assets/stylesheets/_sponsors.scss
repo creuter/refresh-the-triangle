@@ -12,7 +12,7 @@
   }
 
   img {
-    @include filter(brightness(0));
+    @include filter(grayscale(1));
     @include margin(null auto);
     @include transition;
     opacity: 0.45;
