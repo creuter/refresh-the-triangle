@@ -634,22 +634,26 @@ h3 {
   margin-top: 6em; }
 
 /* line 52, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
+h4 {
+  margin-top: 3em; }
+
+/* line 56, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
 p {
   margin: 0 0 0.75em; }
 
-/* line 56, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
+/* line 60, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
 a {
   color: #477dca;
   text-decoration: none;
   transition: color 0.1s linear; }
-  /* line 61, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
+  /* line 65, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus, a:hover {
     color: #2c5999; }
-  /* line 67, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
+  /* line 71, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus {
     outline: none; }
 
-/* line 73, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
+/* line 77, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
 hr {
   margin: 6em 0 3em;
   background-color: #333;
@@ -662,7 +666,7 @@ hr {
   height: 0.125em;
   width: 10em; }
 
-/* line 86, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
+/* line 90, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
 svg,
 img,
 picture {
@@ -872,8 +876,8 @@ body {
     display: block; }
   /* line 14, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/_sponsors.scss */
   .sponsors img {
-    -webkit-filter: brightness(0);
-    filter: brightness(0);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
     margin-right: auto;
     margin-left: auto;
     -webkit-transition: all 0.15s ease-out 0s;
