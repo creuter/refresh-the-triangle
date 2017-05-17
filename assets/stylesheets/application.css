@@ -587,7 +587,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  color: rgba(51, 51, 51, 0.6);
+  color: rgba(51, 51, 51, 0.7);
   font-family: "ff-meta-serif-web-pro", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 4.5vw;
   line-height: 1.5; }
@@ -628,23 +628,23 @@ h2 {
 
 /* line 45, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
 h3 {
-  color: rgba(51, 51, 51, 0.6);
+  color: rgba(51, 51, 51, 0.7);
   font-family: "ff-meta-serif-web-pro", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-style: italic;
   margin-top: 6em; }
 
 /* line 52, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
 h4 {
+  font-size: 1.125em;
   margin-top: 3em; }
 
-/* line 56, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
+/* line 57, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
 p {
   margin: 0 0 0.75em; }
 
-/* line 60, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
+/* line 61, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
 a {
   color: #477dca;
-  text-decoration: none;
   transition: color 0.1s linear; }
   /* line 65, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/base/_typography.scss */
   a:active, a:focus, a:hover {
@@ -732,7 +732,7 @@ picture {
     margin-bottom: 0; }
   /* line 57, /Users/christian/projects/refreshthetriangle/refreshthetriangle.github.io/source/assets/stylesheets/_card.scss */
   .card-location address {
-    color: rgba(51, 51, 51, 0.6);
+    color: rgba(51, 51, 51, 0.7);
     font-size: 0.825em;
     font-style: normal; }
 
